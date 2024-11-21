@@ -1,0 +1,469 @@
+.loguito img {
+    height: 40px; 
+    width: auto; 
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .loguito:hover img {
+    transform: scale(1.1); 
+    filter: brightness(1.2); 
+  }
+  
+  .loguito {
+    display: inline-block; 
+    padding: 5px; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loguito:hover {
+    background-color: rgba(255, 59, 48, 0.1); 
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  header nav {
+    background-color: #111;
+    padding: 20px 0;
+  }
+  header nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  header nav .nav-links a:hover {
+    background-color: #ff3b30;
+    border-radius: 5px;
+  }
+  
+  .hero {
+    background-color: #ff3b30;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .hero .btn-main {
+    background-color: white;
+    color: #ff3b30;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .hero .btn-main:hover {
+    background-color: #ff3b30;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .buy-section {
+    padding: 40px;
+    text-align: center;
+  }
+  .buy-section .buy-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .buy-section .buy-card {
+    width: 45%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .buy-card img {
+    width: 70%;
+    max-width: 250px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .buy-section .buy-card:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  .buy-section .buy-card img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .buy-section .buy-card h3 {
+    font-size: 1.8rem;
+    color: #ff3b30;
+  }
+  .buy-section .buy-card .price {
+    font-size: 1.2rem;
+    color: #ff3b30;
+    margin: 10px 0;
+  }
+  .buy-section .buy-card .btn-buy {
+    padding: 12px 25px;
+    background-color: #ff3b30;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .buy-section .buy-card .btn-buy:hover {
+    background-color: rgb(252, 13.3913043478, 0);
+    transform: scale(1.1);
+  }
+  
+  .features {
+    padding: 40px;
+    text-align: center;
+  }
+  .features h2 {
+    font-size: 2rem;
+    color: #ff3b30;
+    margin-bottom: 20px;
+  }
+  .features ul {
+    list-style: none;
+    padding: 0;
+  }
+  .features li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+  
+  /* Asegurando que las imágenes sean del mismo tamaño, sin cortarse */
+  /* Estilo para las imágenes del carrusel */
+  .carousel-inner img {
+    margin-top: 60px;
+    width: 100%;
+    height: 400px; /* Ajusta esta altura según lo necesites */
+    object-fit: contain; /* Esto ajusta la imagen dentro del contenedor sin cortarla */
+  }
+  
+  /* Estilos para los títulos de las imágenes */
+  .carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: rgb(255, 255, 255); /* Título en blanco para mejor visibilidad */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Estilo para los botones del carrusel */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px; /* Tamaño cuadrado de los botones */
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo gris para los botones */
+    position: absolute;
+    top: 50%; /* Centrado vertical */
+    transform: translateY(-50%); /* Ajuste para el centrado exacto */
+    color: #fff; /* Color blanco para las flechas */
+    border: none; /* Sin borde */
+    text-align: center; /* Asegura que las flechas estén centradas */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    font-size: 30px; /* Tamaño de las flechas */
+    font-family: Arial, sans-serif; /* Tipo de letra para las flechas */
+  }
+  
+  /* Flecha izquierda (<) */
+  .carousel-control-prev::before {
+    content: '<'; /* Flecha izquierda */
+    color: white; /* Color blanco */
+    font-size: 30px;
+  }
+  
+  /* Flecha derecha (>) */
+  .carousel-control-next::before {
+    content: '>'; /* Flecha derecha */
+    color: white; /* Color blanco */
+    font-size: 30px;
+  }
+  
+  /* Estilo para el hover */
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: #888; /* Gris más oscuro cuando el mouse está sobre el botón */
+  }
+  
+  .carousel-caption h5 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  /* Recuadro animado para toda la sección */
+  .recuadro {
+    display: inline-block;
+    padding: 20px;
+    border: 3px solid #333; /* Borde inicial */
+    border-radius: 15px; /* Bordes redondeados */
+    position: relative;
+    background-color: #f0f0f0; /* Fondo claro */
+    animation: animarRecuadro 1.5s ease-in-out; /* Aplica la animación solo una vez */
+  }
+  
+  /* Animación de recuadro */
+  @keyframes animarRecuadro {
+    0% {
+      border-color: #333;
+      background-color: #f0f0f0;
+      transform: scale(1); /* Escala inicial */
+    }
+    50% {
+      border-color: #ff3b30; /* Cambia el color del borde */
+      background-color: #ffe0e0; /* Cambia el fondo a un color claro */
+      transform: scale(1.05); /* Agranda el recuadro */
+    }
+    100% {
+      border-color: #333;
+      background-color: #f0f0f0;
+      transform: scale(1); /* Vuelve al tamaño original */
+    }
+  }
+  
+  /* Estilos del título dentro del recuadro */
+  .recuadro h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Estilos del texto dentro del recuadro */
+  .recuadro p, .recuadro ul {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  /* Efecto hover para el recuadro */
+  .recuadro:hover {
+    animation: animarRecuadroHover 1.5s ease-in-out; /* Animación de hover */
+    cursor: pointer; /* Muestra el cursor de mano cuando pasa por encima */
+  }
+  
+  /* Animación de hover para el recuadro */
+  @keyframes animarRecuadroHover {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: none;
+    }
+  }
+  
+  /* Estilos para las características */
+  .features-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px 0;
+  }
+  
+  .features-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features-section ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para los elementos dentro de la features-section */
+  .features-section .feature {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    header nav .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    header nav .nav-links {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+    }
+  
+    header nav .nav-links a {
+      padding: 10px 0;
+      font-size: 1rem;
+    }
+  
+    .hero {
+      padding: 50px 20px;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    .buy-section .buy-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .buy-section .buy-card {
+      width: 80%;
+      margin: 10px 0;
+    }
+  
+    .carousel-inner img {
+      height: 250px;
+    }
+  
+    .carousel-control-prev, .carousel-control-next {
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+    }
+  
+    .features-section {
+      width: 90%;
+    }
+  
+    .features-section ul li {
+      font-size: 1rem;
+    }
+  
+    footer p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header nav .container {
+      padding: 10px;
+    }
+  
+    .loguito img {
+      height: 30px;
+    }
+  
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero p {
+      font-size: 1.1rem;
+    }
+  
+    .hero .btn-main {
+      padding: 12px 20px;
+      font-size: 1rem;
+    }
+  
+    .buy-section .buy-card {
+      width: 100%;
+    }
+  
+    .buy-section .buy-card h3 {
+      font-size: 1.6rem;
+    }
+  
+    .buy-section .buy-card .price {
+      font-size: 1rem;
+    }
+  
+    .buy-section .buy-card .btn-buy {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  
+    .recuadro {
+      padding: 15px;
+    }
+  
+    .features-section h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .hero {
+      padding: 80px 20px;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.3rem;
+    }
+  
+    .buy-section .buy-card {
+      width: 48%;
+    }
+  
+    .recuadro {
+      padding: 20px;
+    }
+  
+    .features-section h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
