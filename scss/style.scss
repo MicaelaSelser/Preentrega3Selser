@@ -3,7 +3,7 @@ $secondary-color: #f0f0f0;
 $text-color: #333;
 $font-family: 'Poppins', sans-serif;
 
-// Variables adicionales
+
 $dark-bg-color: #111;
 $link-color: white;
 $font-size-base: 1rem;
@@ -37,8 +37,6 @@ $box-shadow-hover: 0px 10px 20px rgba(0, 0, 0, 0.15);
   background-color: rgba(255, 59, 48, 0.1); 
 }
 
-
-// Estilo general para el cuerpo de la página
 body {
   font-family: $font-family;
   margin: 0;
@@ -47,7 +45,6 @@ body {
   color: $text-color;
 }
 
-// Header Section
 header {
   nav {
     background-color: $dark-bg-color;
@@ -74,7 +71,6 @@ header {
   }
 }
 
-// Hero Section
 .hero {
   background-color: $primary-color;
   color: $link-color;
@@ -109,7 +105,6 @@ header {
   }
 }
 
-// Buy Section
 .buy-section {
   padding: $padding-large;
   text-align: center;
@@ -171,7 +166,6 @@ header {
   }
 }
 
-// Features Section
 .features {
   padding: $padding-large;
   text-align: center;
@@ -193,7 +187,6 @@ header {
   }
 }
 
-// Footer Section
 footer {
   background-color: $dark-bg-color;
   color: $link-color;

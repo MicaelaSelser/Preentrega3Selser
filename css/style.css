@@ -171,65 +171,62 @@
     font-size: 1rem;
   }
   
-  /* Asegurando que las imágenes sean del mismo tamaño, sin cortarse */
-  /* Estilo para las imágenes del carrusel */
   .carousel-inner img {
     margin-top: 60px;
     width: 100%;
-    height: 400px; /* Ajusta esta altura según lo necesites */
-    object-fit: contain; /* Esto ajusta la imagen dentro del contenedor sin cortarla */
+    height: 400px; 
+    object-fit: contain;
   }
   
-  /* Estilos para los títulos de las imágenes */
+ 
   .carousel-caption {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    color: rgb(255, 255, 255); /* Título en blanco para mejor visibilidad */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
   }
   
-  /* Estilo para los botones del carrusel */
+ 
   .carousel-control-prev,
   .carousel-control-next {
-    width: 50px; /* Tamaño cuadrado de los botones */
+    width: 50px; 
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo gris para los botones */
+    background-color: rgba(0, 0, 0, 0.5); 
     position: absolute;
-    top: 50%; /* Centrado vertical */
-    transform: translateY(-50%); /* Ajuste para el centrado exacto */
-    color: #fff; /* Color blanco para las flechas */
-    border: none; /* Sin borde */
-    text-align: center; /* Asegura que las flechas estén centradas */
+    top: 50%; 
+    transform: translateY(-50%); 
+    color: #fff;
+    border: none; 
+    text-align: center; 
     display: flex;
-    justify-content: center; /* Centra horizontalmente el contenido */
-    align-items: center; /* Centra verticalmente el contenido */
-    font-size: 30px; /* Tamaño de las flechas */
-    font-family: Arial, sans-serif; /* Tipo de letra para las flechas */
+    justify-content: center; 
+    align-items: center; 
+    font-size: 30px; 
+    font-family: Arial, sans-serif;
   }
   
-  /* Flecha izquierda (<) */
   .carousel-control-prev::before {
-    content: '<'; /* Flecha izquierda */
-    color: white; /* Color blanco */
+    content: '<';
+    color: white;
     font-size: 30px;
   }
   
-  /* Flecha derecha (>) */
+ 
   .carousel-control-next::before {
-    content: '>'; /* Flecha derecha */
-    color: white; /* Color blanco */
+    content: '>'; 
+    color: white;
     font-size: 30px;
   }
   
-  /* Estilo para el hover */
+  
   .carousel-control-prev:hover,
   .carousel-control-next:hover {
-    background-color: #888; /* Gris más oscuro cuando el mouse está sobre el botón */
+    background-color: #888; 
   }
   
   .carousel-caption h5 {
@@ -237,37 +234,35 @@
     font-size: 1.5rem;
   }
   
-  /* Recuadro animado para toda la sección */
+ 
   .recuadro {
     display: inline-block;
     padding: 20px;
-    border: 3px solid #333; /* Borde inicial */
-    border-radius: 15px; /* Bordes redondeados */
+    border: 3px solid #333;
+    border-radius: 15px; 
     position: relative;
-    background-color: #f0f0f0; /* Fondo claro */
-    animation: animarRecuadro 1.5s ease-in-out; /* Aplica la animación solo una vez */
+    background-color: #f0f0f0; 
+    animation: animarRecuadro 1.5s ease-in-out; 
   }
   
-  /* Animación de recuadro */
   @keyframes animarRecuadro {
     0% {
       border-color: #333;
       background-color: #f0f0f0;
-      transform: scale(1); /* Escala inicial */
+      transform: scale(1); 
     }
     50% {
-      border-color: #ff3b30; /* Cambia el color del borde */
-      background-color: #ffe0e0; /* Cambia el fondo a un color claro */
-      transform: scale(1.05); /* Agranda el recuadro */
+      border-color: #ff3b30; 
+      background-color: #ffe0e0; 
+      transform: scale(1.05); 
     }
     100% {
       border-color: #333;
       background-color: #f0f0f0;
-      transform: scale(1); /* Vuelve al tamaño original */
+      transform: scale(1); 
     }
   }
   
-  /* Estilos del título dentro del recuadro */
   .recuadro h2 {
     text-align: center;
     color: #333;
@@ -276,7 +271,6 @@
     font-weight: bold;
   }
   
-  /* Estilos del texto dentro del recuadro */
   .recuadro p, .recuadro ul {
     color: #333;
     font-size: 1rem;
@@ -284,13 +278,12 @@
     text-align: justify;
   }
   
-  /* Efecto hover para el recuadro */
+
   .recuadro:hover {
-    animation: animarRecuadroHover 1.5s ease-in-out; /* Animación de hover */
-    cursor: pointer; /* Muestra el cursor de mano cuando pasa por encima */
+    animation: animarRecuadroHover 1.5s ease-in-out; 
+    cursor: pointer; 
   }
   
-  /* Animación de hover para el recuadro */
   @keyframes animarRecuadroHover {
     0% {
       transform: scale(1);
@@ -305,7 +298,6 @@
     }
   }
   
-  /* Estilos para las características */
   .features-section {
     display: flex;
     flex-wrap: wrap;
@@ -323,14 +315,12 @@
     margin-bottom: 10px;
   }
   
-  /* Estilos para los elementos dentro de la features-section */
   .features-section .feature {
     width: 30%;
     margin-bottom: 20px;
     text-align: center;
   }
   
-  /* Responsive design for smaller screens */
   @media (max-width: 768px) {
     header nav .container {
       flex-direction: column;
