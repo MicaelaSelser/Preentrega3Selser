@@ -197,3 +197,27 @@ footer {
     font-size: $font-size-base;
   }
 }
+
+
+%button-style {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  background-color: $primary-color;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+  }
+}
+
+
+button, a {
+  @extend %button-style;
+}
